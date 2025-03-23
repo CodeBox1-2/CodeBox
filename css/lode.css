@@ -1,0 +1,82 @@
+body{
+  background-image: url(../img/background_logo_lode.jpg);
+  background-attachment: fixed;
+}
+.card{
+  width: 134px;
+  height: 136px;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+.card::before{
+  content: '';
+  width: 135px;
+  height: 137px;
+  position: absolute;
+  bottom: -7%;
+  right: -9%;
+  border: 10px solid;
+  border-radius: 50%;
+  border-color: #f6f6e9 #f6f6e9 transparent #f6f6e9;
+  animation-name: br;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.4s;
+}
+.lod{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+.lod>img{
+  width: 195%;
+  translate: -50%;
+  position: absolute;
+  top: -28%;
+  left: 50%;
+}
+.lod::before{
+  content: '';
+  width: 100px;
+  height: 99px;
+  position: absolute;
+  bottom: -9%;
+  right: -10%;
+  border: 10px solid;
+  border-radius: 50%;
+  border-color: #ed5b2d #ed5b2d #ed5b2d transparent;
+  animation-name: br;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.lod::after{
+  content: '';
+  width: 117px;
+  height: 118px;
+  position: absolute;
+  bottom: -18%;
+  right: -19%;
+  border: 10px solid;
+  border-radius: 50%;
+  border-color: #ffce6d transparent #ffce6d #ffce6d;
+  animation-name: br;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.3s;
+}
+@keyframes br{
+  form{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
+}

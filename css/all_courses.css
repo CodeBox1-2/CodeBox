@@ -1,0 +1,241 @@
+.na{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  background-color: #1c3b8c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.na>div>img{
+  width: 185px;
+}
+.lin>ul{
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 15px;
+}
+.lin>ul>li{
+  list-style: none;
+}
+.lin>ul>li>a{
+  color: white;
+    text-decoration-line: none;
+}
+/* start  */
+.nv {
+  background-image: url(../img/background_logo_lode.jpg);
+  color: white;
+  height: 372px;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -2;
+}
+
+.nv::before {
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 33px;
+  background-image: linear-gradient(to top Right, #1c3b8c, #f39c12);
+  border-radius: 7px;
+  list-style: none;
+  font-size: larger;
+  width: 103px;
+
+}
+.icon{
+  position: absolute;
+  position: absolute;
+  left: -21px;
+  top: 77px;
+  background-image: linear-gradient(to top Right, #1c3b8c, #f39c12);
+  border-radius: 50%;
+  padding: 17px;
+}
+.b-nav{
+  position: absolute;
+  top: 25%;
+  left: 13%;
+
+}
+.fli{
+  margin-left: 11px;
+}
+/* end */
+.ap{
+  display: grid;
+    grid-template-columns: repeat(auto-fill, 292px);
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    margin: 56px 0px;
+}
+.cou{
+  /* border: 1px solid; */
+  padding: 20px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.cou:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+.cou>a{
+  text-decoration-line: none;
+  color: white;
+  background-color: #1212e0;
+  padding: 4px 21px;
+  border-radius: 20px;
+}
+.cou>a:hover{
+  background-color: #f39c12;
+  transition: 0.5s;
+}
+/*  START FOOTER */
+.footer {
+  background: linear-gradient(to right, rgb(20, 66, 183), #f39c12);
+  color: white;
+  /* padding-bottom: 40px; */
+}
+.parent-content-foot {
+  display: flex;
+  justify-content: space-between;
+  padding:54px 10px;
+  flex-wrap: wrap;
+}
+.child-foot {
+  position: relative;
+}
+.child-foot h3::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  background-color: #f39c12;
+}
+.child-foot h3::before {
+  content: "";
+  width: 10px;
+  height: 9px;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: #f39c12;
+  border-radius: 500px;
+}
+.child-foot h3 {
+  margin-bottom: 30px;
+}
+
+.child-foot img {
+  width: 100px;
+  height: auto;
+}
+.copy {
+  text-align: center;
+}
+.child-foot a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s all;
+}
+.child-foot a:hover {
+  text-decoration: underline;
+  color: #f39c12;
+}
+.child-foot i {
+  padding: 10px;
+  background-color: #f39c12;
+  border-radius: 40px;
+  transition: 0.5s all;
+  margin: 8px;
+}
+.child-foot i:hover {
+  background-color: white;
+  color: black;
+}
+.copy {
+  background: linear-gradient(to right, #08226a, #664400);
+  padding: 30px;
+  color: #fff;
+}
+.copy a {
+  color: white;
+}
+.copy a:hover {
+  color: #f39c12;
+  text-decoration: none;
+}
+/* END FOOTER */
+.navOne{
+  display: none;
+}
+.navList{
+  display: none;
+}
+@media(max-width:944px){
+   .lin>ul{
+       display: none;
+   }
+   .navOne{
+       display: block;
+       text-align: end;
+   }
+   .navOne>i{
+       margin: 43px;
+       font-size: x-large;
+       cursor: pointer;
+       color: wheat;
+   }
+   .navList>ul{
+    padding: 0;
+   }
+   .navList{
+       display: block;
+   }
+
+   .navList{
+       position: fixed;
+       top: 15%;
+       right: 7%;
+       background-color: #1442b7;
+       border-radius: 20px;
+   }
+   ul{
+       list-style: none;
+       padding: 0px;
+   }
+   .navList>ul>li{
+       margin: 9px 0px;
+       padding: 10px 44px;
+       cursor: pointer;
+   }
+   .navList>ul>li>a{
+    color: wheat;
+    text-decoration: none;
+   }
+   .navList>ul>li:hover{
+       background-color: #f39c12;
+       color: white;
+   }
+   .lestsho{
+       display: none;
+   }
+   
+}

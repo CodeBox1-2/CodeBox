@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/registration.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <form id="fom" action="../html/home.html" class="mop">
+    <div class="card1">
+    <input id="fn" 
+      class="inp" 
+        required 
+          maxlength ="20" 
+            type="text"
+            placeholder="first name" >
+  </div>
+
+  <div class="card1">
+    <input id="ln"
+      class="inp"
+        required
+          maxlength ="20"
+            type="text"
+            placeholder="last name">
+  </div>
+
+  <div class="card1">
+    <input id="em1"
+      class="inp"
+        required
+          type="email"
+            placeholder="email" >
+  </div>
+
+  <div class="card1">
+    <input id="pass"
+      class="inp"
+        required
+          minlength ="8"
+            maxlength ="16"
+              type="password"
+                placeholder="password" >
+  </div>
+
+  <div class="card1">
+    <input id="pass1"
+      class="inp"
+        required 
+          minlength ="8"
+            maxlength ="16"
+              type="password"
+              placeholder="again password" >
+  </div>
+
+  <div>
+    <p id="agnPas" class="againPs dl">Password mismatch</p>
+  </div>
+
+  <div class="card1">
+    <input id="phone"
+      class="inp"
+        required
+          minlength ="11"
+            maxlength ="11"
+              type="tel"
+               placeholder="phone number" >
+  </div>
+
+  <div class="sub">
+    <input type="submit" value="ok" onclick="againPs()">
+    <input type="reset" value="cancel">
+  </div>
+
+  <a href="registration.html" class="lin linSm">i have an account</a>
+</form>
+  
+</body>
+</html>

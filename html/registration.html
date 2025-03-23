@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../css/registration.css">
+    <title>registration</title>
+  </head>
+  <body>
+    <div class="card">
+<!-- Form code to create an account -->
+    <form action="../html/home.html" class="width">
+          <div class="card1">
+            <label for="em" class="lab1" id="la1">email</label>
+            <input id="em" 
+              class="inp" 
+                required 
+                  type="email" 
+                    onfocus="lab1()" 
+                      onblur="input0()" >
+          </div>
+
+          <div class="card1">
+          <label for="pas" class="lab1" id="la2">password</label>
+          <input id="pas" 
+            class="inp" 
+              required 
+                minlength ="8" 
+                  maxlength ="16" 
+                    type="password" 
+                      onfocus="lab2()" 
+                        onblur="input1()" >
+        </div>
+
+        <div class="sub">
+          <input type="submit" value="ok">
+          <input type="reset" value="cancel">
+        </div>
+        <p class="lin" onclick="shebs2()">Create a new account</p>
+      
+      </form>
+
+<!-- Login form code -->
+<form id="fom" action="../html/home.html" class="width">
+        <div class="card1">
+        <label for="fn" class="lab1" id="la3">first name</label>
+        <input id="fn" 
+          class="inp" 
+            required 
+              maxlength ="20" 
+                type="text" 
+                  onfocus="lab3()" 
+                    onblur="input2()" >
+      </div>
+
+      <div class="card1">
+        <label for="ln" class="lab1" id="la4">last name</label>
+        <input id="ln"
+          class="inp"
+            required
+              maxlength ="20"
+                type="text"
+                  onfocus="lab4()"
+                    onblur="input3()" >
+      </div>
+
+      <div class="card1">
+        <label for="em1" class="lab1" id="la5">email</label>
+        <input id="em1"
+          class="inp"
+            required
+              type="email"
+                onfocus="lab5()"
+                  onblur="input4()" >
+      </div>
+
+      <div class="card1">
+        <label for="pass" class="lab1" id="la6">password</label>
+        <input id="pass"
+          class="inp"
+            required
+              minlength ="8"
+                maxlength ="16"
+                  type="password"
+                    onfocus="lab6()"
+                      onblur="input5()" >
+      </div>
+
+      <div class="card1">
+        <label for="pass1" class="lab1" id="la7">again password</label>
+        <input id="pass1"
+          class="inp"
+            required 
+              minlength ="8"
+                maxlength ="16"
+                  type="password"
+                    onfocus="lab7()"
+                      onblur="input6()" >
+      </div>
+
+      <div>
+        <p id="agnPas" class="againPs dl">Password mismatch</p>
+      </div>
+
+      <div class="card1">
+        <label for="phone" class="lab1" id="la8">phone number</label>
+        <input id="phone"
+          class="inp"
+            required
+              minlength ="11"
+                maxlength ="11"
+                  type="tel"
+                    onfocus="lab8()"
+                      onblur="input7()" >
+      </div>
+
+      <div class="sub">
+        <input type="submit" value="ok" onclick="againPs()">
+        <input type="reset" value="cancel">
+      </div>
+
+      <p class="lin" onclick="shebs1()">i have an account</p>
+  </form>
+
+</div>
+<!-- shebs -->
+<div class="shebs shebs1" id="shebs">
+  <img src="../img/logoCodebox.png" alt="">
+</div>
+<!-- +++++++++++++++++++++++++++++++++++++++ -->
+<!-- registation on iphone -->
+<form action="../html/home.html"  class="mop">
+  <div class="card1">
+    <input id="em" 
+      class="inp" 
+        required 
+          type="email" 
+            onfocus="lab1()" 
+              onblur="input0()" 
+                placeholder="email">
+  </div>
+
+  <div class="card1">
+  <input id="pas" 
+    class="inp" 
+      required 
+        minlength ="8" 
+          maxlength ="16" 
+            type="password" 
+              onfocus="lab2()" 
+                onblur="input1()" 
+                  placeholder="password">
+</div>
+
+<div class="sub">
+  <input type="submit" value="ok">
+  <input type="reset" value="cancel">
+</div>
+<a href="../html/regisration2.html" class="lin linSm">Create a new account</a>
+</form>
+
+  <script src="../javascript/registration.js" ></script>
+</body>
+</html>
